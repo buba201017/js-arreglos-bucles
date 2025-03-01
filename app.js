@@ -49,6 +49,10 @@ function ejecutarTodosLosRetos() {
         'radar', 
         esPalindromo('radar'));
 
+
+    const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+    salida += mostrar('Logro adicional',`Numero aleatorio`,`Acertó el número en ${logroAdicional(numeroAleatorio)} intentos`);
+
     // Mostrar todos los resultados
     document.getElementById('consola').textContent = salida;
 }
